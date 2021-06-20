@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body{
+    max-width: 1000px;
+    margin:0 auto;
+    height:100vh;
+    
+}
+div.profile {
+  margin: 60px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.profile img {
+  width: 156px;
+  height: 156px;
+
+  background: #c4c4c4;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.profile span.location{
+    display: block;
+    padding-top:8px;
+}
+/* .info .sub-head{
+    display: block;
+    padding-top:4px;
+} */
+
+.head {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+.sub-head {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+}
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 24px;
+  
+}
+.info div {
+  width: 100px;
+  height: 67px;
+  padding-top:14px;
+  background: #e5e5e5;
+  border-radius: 12px;
+}
+.gallery .photos{
+   
+}
+.gallery .photo1{
+    grid-area: photo1;
+}
+.gallery .photo2{
+    grid-area: photo2;
+}
+.gallery .photo3{
+    grid-area: photo3;
+}
+.gallery .photo4{
+    grid-area: photo4;
+}
+.gallery .photo5{
+    grid-area: photo5;
+}
+.gallery .photo6{
+    grid-area: photo6;
+}
+.gallery {
+    display: grid;
+    height: 1000px;
+    width: 950px;
+    gap: 24px;
+    margin:0 auto;
+    /* grid-template-rows:auto auto 1fr auto auto auto ; */
+    grid-template-areas: 
+    "photo1 photo2 photo2 "
+    "photo3 photo3 photo4 "
+    "photo5 photo6 photo4 "
+    ;
+
+  }
+
+/* .gallery{
+    max-width: 950px;
+    display: grid;
+    gap: 40px;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:repeat(12, 1fr);
+
+} */
