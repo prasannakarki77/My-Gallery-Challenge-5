@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-body{
-    max-width: 1000px;
-    margin:0 auto;
-    height:100vh;
-    
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-width: 320px;
 }
 div.profile {
   margin: 60px auto;
@@ -20,14 +19,10 @@ div.profile {
   border-radius: 16px;
   margin-bottom: 16px;
 }
-.profile span.location{
-    display: block;
-    padding-top:8px;
+.profile span.location {
+  display: block;
+  padding-top: 8px;
 }
-/* .info .sub-head{
-    display: block;
-    padding-top:4px;
-} */
 
 .head {
   font-family: "Montserrat", sans-serif;
@@ -49,57 +44,94 @@ div.profile {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 24px;
-  
 }
 .info div {
   width: 100px;
   height: 67px;
-  padding-top:14px;
+  padding-top: 14px;
   background: #e5e5e5;
   border-radius: 12px;
 }
-.gallery .photos{
-   
+
+.gallery div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
 }
-.gallery .photo1{
-    grid-area: photo1;
+.gallery .photo1 {
+  grid-area: photo1;
 }
-.gallery .photo2{
-    grid-area: photo2;
+.gallery .photo2 {
+  grid-area: photo2;
 }
-.gallery .photo3{
-    grid-area: photo3;
+.gallery .photo3 {
+  grid-area: photo3;
 }
-.gallery .photo4{
-    grid-area: photo4;
+.gallery .photo4 {
+  grid-area: photo4;
 }
-.gallery .photo5{
-    grid-area: photo5;
+.gallery .photo5 {
+  grid-area: photo5;
 }
-.gallery .photo6{
-    grid-area: photo6;
+.gallery .photo6 {
+  grid-area: photo6;
 }
 .gallery {
-    display: grid;
-    height: 1000px;
-    width: 950px;
-    gap: 24px;
-    margin:0 auto;
-    /* grid-template-rows:auto auto 1fr auto auto auto ; */
-    grid-template-areas: 
+  display: grid;
+  height: 70%;
+  max-width: 950px;
+  gap: 2%;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  grid-template-areas:
     "photo1 photo2 photo2 "
     "photo3 photo3 photo4 "
-    "photo5 photo6 photo4 "
-    ;
+    "photo5 photo6 photo4 ";
+}
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #b9bdcf;
+  margin-bottom: 10px;
+}
+footer a {
+  text-decoration: underline;
+  color: #828282;
+}
 
+@media (max-width: 968px) {
+  .gallery {
+    margin: 0 12px 10vh 12px;
   }
+}
 
-/* .gallery{
-    max-width: 950px;
-    display: grid;
-    gap: 40px;
-    height: 100vh;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns:repeat(12, 1fr);
-
-} */
+@media (max-width: 500px) {
+  .profile img {
+    width: 102px;
+    height: 102px;
+    margin-bottom: 11px;
+  }
+  .head {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .sub-head {
+    font-size: 10px;
+    line-height: 14.63px;
+  }
+  .profile span.location {
+    padding-top: 4px;
+  }
+  .info div {
+    width: 78px;
+    height: 52px;
+    padding-top: 10px;
+  }
+  .info {
+    margin-top: 12px;
+  }
+}
