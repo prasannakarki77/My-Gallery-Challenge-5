@@ -35,7 +35,8 @@
 
 ## Overview
 
-![screenshot](images/screenshot1.png)![screenshot](images/screenshot2.png)
+![screenshot](images/screenshot1.png)
+![screenshot](images/screenshot2.png)
 
 ### Built With
 
